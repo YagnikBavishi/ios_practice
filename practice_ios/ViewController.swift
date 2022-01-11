@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         let str = "hello"
         let str1 = "how are you"
+        let str2 = "I am fine"
     }
 
 
