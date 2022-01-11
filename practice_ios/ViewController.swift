@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let str = "hello"
+        let str1 = "how are you"
     }
 
 
