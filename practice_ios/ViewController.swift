@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         let str = "hello"
         let str1 = "how are you"
         let str2 = "I am fine"
+        let str3 = "ok!!"
     }
 
 
