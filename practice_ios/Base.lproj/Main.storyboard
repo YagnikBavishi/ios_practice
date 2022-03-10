@@ -1,24 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practice_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWQ-UO-yLL">
+                                <rect key="frame" x="30" y="64" width="330" height="31"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FirstScreen"/>
+                                <connections>
+                                    <segue destination="ICR-0F-ouC" kind="presentation" modalPresentationStyle="fullScreen" id="yHb-wG-Kzc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-5x-PMz">
+                                <rect key="frame" x="30" y="110" width="330" height="31"/>
+                                <color key="backgroundColor" red="0.16975060859999999" green="0.52176514269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UI Compoents"/>
+                                <connections>
+                                    <segue destination="0Cn-a4-fFo" kind="presentation" modalPresentationStyle="fullScreen" id="xmi-X1-bSx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcZ-iV-07v">
+                                <rect key="frame" x="30" y="156" width="330" height="31"/>
+                                <color key="backgroundColor" red="0.16975060859999999" green="0.52176514269999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Page Controller"/>
+                                <connections>
+                                    <segue destination="RiU-v2-2Xi" kind="presentation" modalPresentationStyle="fullScreen" id="Jn1-Ye-0bJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyj-1y-nEx">
+                                <rect key="frame" x="30" y="202" width="330" height="31"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Navigation"/>
+                                <connections>
+                                    <segue destination="sNn-Oo-1XF" kind="presentation" modalPresentationStyle="fullScreen" id="FnD-sD-jWJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zmt-5x-PMz" secondAttribute="trailing" constant="30" id="230-Gh-ZiM"/>
+                            <constraint firstItem="PWQ-UO-yLL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2EX-EV-a5e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lyj-1y-nEx" secondAttribute="trailing" constant="30" id="3uu-bN-M4T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcZ-iV-07v" secondAttribute="trailing" constant="30" id="CID-jA-GxL"/>
+                            <constraint firstItem="zmt-5x-PMz" firstAttribute="top" secondItem="PWQ-UO-yLL" secondAttribute="bottom" constant="15" id="I0W-eK-BYO"/>
+                            <constraint firstItem="zmt-5x-PMz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MfH-hg-jJM"/>
+                            <constraint firstItem="Lyj-1y-nEx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="azF-3v-JMh"/>
+                            <constraint firstItem="jcZ-iV-07v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="c2i-5J-PiY"/>
+                            <constraint firstItem="Lyj-1y-nEx" firstAttribute="top" secondItem="jcZ-iV-07v" secondAttribute="bottom" constant="15" id="mZh-KI-DSM"/>
+                            <constraint firstItem="jcZ-iV-07v" firstAttribute="top" secondItem="zmt-5x-PMz" secondAttribute="bottom" constant="15" id="ruJ-gB-v7u"/>
+                            <constraint firstItem="PWQ-UO-yLL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="s4X-0P-80j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PWQ-UO-yLL" secondAttribute="trailing" constant="30" id="vV0-pc-OBC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="16.822429906542055" y="44.708423326133911"/>
+        </scene>
+        <!--FirstScreenStoryboard-->
+        <scene sceneID="ryS-y7-ONb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FirstScreenStoryboard" id="ICR-0F-ouC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Y9l-Na-7X1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5P-RX-27o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="-192"/>
+        </scene>
+        <!--UIComponetsViewController-->
+        <scene sceneID="UJa-RF-zUG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIComponetsStoryboard" referencedIdentifier="UIComponetsViewController" id="0Cn-a4-fFo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IjC-sC-kHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="44"/>
+        </scene>
+        <!--PageViewController-->
+        <scene sceneID="CaO-PF-ziW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PageStoryboard" referencedIdentifier="PageViewController" id="RiU-v2-2Xi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mt6-3n-KtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="109"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="Etn-A8-XZa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="sNn-Oo-1XF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZI-wV-6f4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="166"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

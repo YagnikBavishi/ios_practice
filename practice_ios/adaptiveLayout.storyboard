@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Y7Q-sl-w8M">
+                                <rect key="frame" x="0.0" y="64" width="414" height="358.33333333333331"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1Q-ho-tXr" userLabel="TextContainer">
+                                <rect key="frame" x="0.0" y="442.33333333333326" width="414" height="419.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="Y7Q-sl-w8M" firstAttribute="width" secondItem="C1Q-ho-tXr" secondAttribute="width" id="0ho-mk-ZyT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="C1Q-ho-tXr" secondAttribute="bottom" id="23L-mH-rH0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="C1Q-ho-tXr" secondAttribute="trailing" id="8jT-Br-WBO"/>
+                            <constraint firstItem="Y7Q-sl-w8M" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8qm-9k-Eq6"/>
+                            <constraint firstItem="Y7Q-sl-w8M" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="Nlt-cn-3L2"/>
+                            <constraint firstItem="Y7Q-sl-w8M" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="R3b-Fx-iaM"/>
+                            <constraint firstItem="C1Q-ho-tXr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="d0b-GF-lpy"/>
+                            <constraint firstItem="Y7Q-sl-w8M" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="jYT-tO-Nla"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Y7Q-sl-w8M" secondAttribute="trailing" id="mSU-p0-bW7"/>
+                            <constraint firstItem="C1Q-ho-tXr" firstAttribute="top" secondItem="Y7Q-sl-w8M" secondAttribute="bottom" constant="20" id="ylJ-Y5-6Yf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download (1)" width="225" height="225"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
