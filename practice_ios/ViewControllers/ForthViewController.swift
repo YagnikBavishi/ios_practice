@@ -1,7 +1,7 @@
 import UIKit
 
 class ForthViewController: UIViewController {
-
+ var a = 10
     override func viewDidLoad() {
         super.viewDidLoad()
         
